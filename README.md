@@ -22,3 +22,10 @@ Specifically, it extracts the following details from each CV:
 Basic information: full name, email, LinkedIn URL, level of education, university, graduation year
 Professional experience (up to 5 entries): job title, company, duration
 Each row in the resulting DataFrame corresponds to a single CV, with the filename as the first column.
+
+
+How to Run
+Ensure all dependencies are installed.
+Place all your CVs in JSON format in a directory named 'CV_parsed'.
+Run the "Table constructor.py" script to parse the CVs and construct a structured table. The resulting table will be saved as an Excel file "cvs.xlsx".
+Run the "Recommender algorithm.py" script. It will create a recommender system based on the CVs.
