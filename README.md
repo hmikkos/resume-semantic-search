@@ -1,9 +1,8 @@
 # resume-semantic-search
 
-This README provides an overview of the scripts included in this repository: "Recommender algorithm.py" and "Table constructor.py". These scripts help to parse and process data from a collection of CVs, transform the data into a structured table and provide recommendations based on text similarity.
+Overview of the scripts included in this repository: "Recommender algorithm.py" and "Table constructor.py". These scripts help to parse and process data from a collection of Curriculum Vitae, transform the data into a structured table and provide recommendations based on text similarity.
 
-Files Description
-1. Recommender algorithm.py
+# 1. Recommender algorithm.py
 This script creates a recommender system that reads and processes CVs in JSON format, generating embeddings for each of the CVs, and then identifies the most similar CVs based on cosine distance between their embeddings.
 
 Here's a brief rundown of its functionalities:
@@ -14,7 +13,7 @@ It includes a function print_recommendations_from_strings that takes a list of s
 It plots a 2D chart of nearest neighbors using t-SNE for visualization. (Commented out currently)
 You'll need to have your OpenAI API Key to run this script.
 
-2. Table constructor.py
+# 2. Table constructor.py
 This script parses the text data of CVs in JSON format and extracts relevant information to construct a structured pandas DataFrame. The DataFrame is then exported to an Excel file, "cvs.xlsx".
 
 Specifically, it extracts the following details from each CV:
@@ -24,7 +23,7 @@ Professional experience (up to 5 entries): job title, company, duration
 Each row in the resulting DataFrame corresponds to a single CV, with the filename as the first column.
 
 
-How to Run
+# How to Run
 Ensure all dependencies are installed.
 Place all your CVs in JSON format in a directory named 'CV_parsed'.
 Run the "Table constructor.py" script to parse the CVs and construct a structured table. The resulting table will be saved as an Excel file "cvs.xlsx".
